@@ -2,12 +2,12 @@ ns = "Idris2.Rust"
 package= "Idris2Rust"
 version= "0.0.1"
 
-description = ""
-link = ""
-readme = ""
+description = "Idris2 Rust backend"
+link = "https://github.com/remimimimi/Idris2-Rust"
+readme = "README.md"
 modules = ["Idris2Rust.Main"]
-depends = ["idris2", "base", "contrib", "prelude", "lib"]
-license = ""
+depends = ["idris2", "base", "contrib", "network"]
+license = "MIT"
 main = "Idris2Rust.Main"
 executable = "idris2rust"
 
