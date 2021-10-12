@@ -1,0 +1,11 @@
+package Idris2Rust
+
+modules = Idris2Rust.Main 
+depends = lib, prelude, contrib, base, idris2 
+
+sourcedir = ""
+builddir = "build"
+
+version = 0.0.1
+main = Idris2Rust.Main
+executable = idris2rust

@@ -1,0 +1,17 @@
+ns = "Idris2.Rust"
+package= "Idris2Rust"
+version= "0.0.1"
+
+description = ""
+link = ""
+readme = ""
+modules = ["Idris2Rust.Main"]
+depends = ["idris2", "base", "contrib", "prelude", "lib"]
+license = ""
+main = "Idris2Rust.Main"
+executable = "idris2rust"
+
+[deps]
+
+[dev-deps]
+Base.IdrTest = "~0.0.1"
