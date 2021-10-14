@@ -5,6 +5,7 @@ version= "0.0.1"
 description = "Idris2 Rust backend"
 link = "https://github.com/remimimimi/Idris2-Rust"
 readme = "README.md"
+sourcedir = "src/"
 modules = ["Idris2Rust.Main"]
 depends = ["idris2", "base", "contrib", "network"]
 license = "MIT"
