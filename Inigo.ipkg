@@ -1,11 +1,10 @@
 package Idris2Rust
 
 modules = Idris2Rust.Main 
-depends = network, contrib, base, idris2 
+depends = idris2, base, network 
 
 sourcedir = "src/"
 builddir = "build"
 
 version = 0.0.1
 main = Idris2Rust.Main
-executable = idris2rust
