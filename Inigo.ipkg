@@ -1,6 +1,6 @@
 package Idris2Rust
 
-modules = Idris2Rust.Main 
+modules = Idris2Rust.Main, Idris2Rust.CompileCfg, Idris2Rust.Expr 
 depends = idris2, base, network 
 
 sourcedir = "src/"

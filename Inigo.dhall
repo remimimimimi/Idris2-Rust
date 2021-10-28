@@ -4,7 +4,11 @@
 , sourcedir = "src/"
 , description = Some "Idris2 Rust backend"
 , executable = Some "idris2rust"
-, modules = ["Idris2Rust.Main"] : List Text
+, modules = [ "Idris2Rust.Main"
+            , "Idris2Rust.CompileCfg"
+            , "Idris2Rust.Expr"
+            , "Idris2Rust.CaseConversion"
+            ] : List Text
 , readme = Some "README.md"
 , license = Some "MIT"
 , link = Some "https://github.com/remimimimi/Idris2-Rust"
