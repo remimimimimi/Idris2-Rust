@@ -15,7 +15,6 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        idrisPkgs = idris-lang.packages.${system};
         idris2 = ((idris2-aoc.packages.x86_64-linux.idris2.override { withSource = true; }).overrideAttrs (old: {
           inherit (idris-lang.packages.${system}.idris2) version src;
         }));
