@@ -17,11 +17,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
         idrisPkgs = idris-lang.packages.${system};
         idris2 = ((idris2-aoc.packages.x86_64-linux.idris2.override { withSource = true; }).overrideAttrs (old:
-          let
-            normalIdris = idris-lang.packages.${system}.idris2;
-          in {
-            version = normalIdris.version;
-            src = normalIdris.src;
+          inherit (idris-lang.packages.${system}.idris2) version src;
         }));
       in {
         devShells.default =
