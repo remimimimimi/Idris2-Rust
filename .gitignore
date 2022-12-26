@@ -1,4 +1,4 @@
 *.ibc
 *.o
 /build
-/.inigo-work
+/.direnv
